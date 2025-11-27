@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quên mật khẩu - 36Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/notification.css">
+</head>
+
+<body>
+    <form id="forgot-form" autocomplete="off" onsubmit="return false;">
+        <h3>Quên mật khẩu</h3>
+        <label for="username">Tên đăng nhập</label>
+        <input id="username" type="text" placeholder="Tên đăng nhập" required>
+        <label for="email">Email đăng ký</label>
+        <input id="email" type="email" placeholder="Email đã đăng ký" required>
+        <label for="newpw">Mật khẩu mới</label>
+        <input id="newpw" type="password" placeholder="Mật khẩu mới" required>
+        <button type="button" id="forgotBtn" class="login-button" onclick="handleForgot()">Đổi mật khẩu</button>
+        <p style="margin-top:18px; text-align:center;">
+            <a href="login.html">Đăng nhập</a> | <a href="register.html">Đăng ký</a>
+        </p>
+    </form>
+    <script src="../js/forgot.js"></script>
+</body>
+
+</html>

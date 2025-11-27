@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập - 36Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/notification.css">
+</head>
+
+<body>
+  <form id="login-form" autocomplete="off" onsubmit="return false;">
+    <h3>Đăng nhập vào 36Tech</h3>
+    <p class="warn">Mỗi người nên sử dụng riêng một tài khoản, tài khoản nhiều người sử dụng chung sẽ bị khoá !</p>
+
+    <label for="username">Tên đăng nhập</label>
+    <input id="username" type="text" placeholder="Email, SĐT hoặc username" required>
+
+    <label for="password">Mật khẩu</label>
+    <input id="password" type="password" placeholder="Mật khẩu" required>
+
+    <button type="button" id="loginBtn" class="login-button" onclick="handleLogin()">Đăng nhập</button>
+
+    <p style="margin-top:18px; text-align:center;">
+      Chưa có tài khoản? <a href="register.html">Đăng ký</a>
+    </p>
+    <p style="margin-top:5px; text-align:center;">
+      <a href="forgot.html">Quên mật khẩu</a>
+    </p>
+  </form>
+
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

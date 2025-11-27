@@ -1,0 +1,41 @@
+/* ===== SIMPLE TOAST NOTIFICATION (MINIMAL) ===== */
+
+.simple-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 9999;
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+/* trạng thái hiện */
+.simple-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* màu theo loại */
+.simple-toast.success {
+  background: #2ecc71;
+}
+
+.simple-toast.error {
+  background: #e74c3c;
+}
+
+.simple-toast.info {
+  background: #3498db;
+}
+
+.simple-toast.warning {
+  background: #f39c12;
+}
